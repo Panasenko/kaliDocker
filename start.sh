@@ -1,8 +1,9 @@
 #!/bin/zsh
 
 docker run -it --rm --net=host\
-	       -p 22:22 \
-	       -v "$(pwd)/host/.:/home/*/." \
+		   -v $(pwd)/host/.:/home/security/ \
+	       --name kali \
+		   --privileged \
 	       security \
 	       /bin/zsh
 	    	

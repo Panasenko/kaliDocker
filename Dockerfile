@@ -9,7 +9,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # do APT update
 RUN apt-get -y update && apt-get -y dist-upgrade && apt-get -y autoremove && apt-get clean
 # install Kali Linux "Top 10" metapackage and a couple "nice to have" tools
-RUN apt-get -y install sudo micro git wget curl zsh micro ssh  kali-tools-top10 exploitdb  man-db dirb nikto wpscan uniscan net-tools
+RUN apt-get -y install sudo micro git wget curl zsh micro ssh  kali-tools-top10 exploitdb  man-db dirb nikto wpscan uniscan net-tools pciutils
 # initialize services
 RUN service ssh start 
 #add user
