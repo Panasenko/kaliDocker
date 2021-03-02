@@ -3,3 +3,4 @@
 # <hostname>	<port>	<incl. subdomains>	<created>	<max-age>
 raw.githubusercontent.com	0	0	1611064122	31536000
 github.com	0	1	1611064121	31536000
+sourceforge.net	0	0	1611945810	31536000
